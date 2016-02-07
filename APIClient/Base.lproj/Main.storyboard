@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="APIClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebN-9g-x32">
+                                <rect key="frame" x="20" y="20" width="52" height="30"/>
+                                <state key="normal" title="London"/>
+                                <connections>
+                                    <action selector="getWeatherForLondonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfj-tT-gkz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sac-dr-Tf2">
+                                <rect key="frame" x="130" y="24" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wep-kx-TDI">
+                                <rect key="frame" x="217" y="24" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYQ-2f-mtS">
+                                <rect key="frame" x="299" y="24" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k6-Cq-Wle">
+                                <rect key="frame" x="20" y="58" width="59" height="30"/>
+                                <state key="normal" title="2172797"/>
+                                <connections>
+                                    <action selector="getWeatherForCityIDPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFh-cn-CcL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ebN-9g-x32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7Qq-iZ-ZKA"/>
+                            <constraint firstItem="sac-dr-Tf2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="7cU-FV-FL9"/>
+                            <constraint firstItem="ebN-9g-x32" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8LO-Cb-Dhd"/>
+                            <constraint firstItem="3k6-Cq-Wle" firstAttribute="top" secondItem="ebN-9g-x32" secondAttribute="bottom" constant="8" id="KbF-4N-k9f"/>
+                            <constraint firstItem="Wep-kx-TDI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="QXu-w9-z2I"/>
+                            <constraint firstItem="3k6-Cq-Wle" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="RQO-wH-Kii"/>
+                            <constraint firstItem="eYQ-2f-mtS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="TIl-Dk-UzP"/>
+                            <constraint firstItem="eYQ-2f-mtS" firstAttribute="leading" secondItem="Wep-kx-TDI" secondAttribute="trailing" constant="40" id="WUl-ka-bPP"/>
+                            <constraint firstItem="Wep-kx-TDI" firstAttribute="leading" secondItem="sac-dr-Tf2" secondAttribute="trailing" constant="45" id="qhi-R8-PBX"/>
+                            <constraint firstItem="sac-dr-Tf2" firstAttribute="leading" secondItem="ebN-9g-x32" secondAttribute="trailing" constant="58" id="uTz-pF-JaL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Wep-kx-TDI" id="vJG-Al-nLi"/>
+                        <outlet property="mainLabel" destination="sac-dr-Tf2" id="vlr-Is-MCU"/>
+                        <outlet property="tempLabel" destination="eYQ-2f-mtS" id="Noq-1e-dQ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="311"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,28 @@
+use_frameworks!
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+def shared_pods
+	pod 'Alamofire'
+	pod 'Locksmith'
+	pod 'PromiseKit'
+    pod 'netfox'
+    pod 'ObjectMapper'
+    pod 'Timberjack'
+end
+
+def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'OHHTTPStubs'
+    pod 'OHHTTPStubs/Swift'
+end
+
+target 'APIClientTests',  :exclusive => true do
+    shared_pods
+    testing_pods
+end
+
+target 'APIClient' do
+	shared_pods
+end

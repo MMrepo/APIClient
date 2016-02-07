@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (3.1.5)
+  - Locksmith (2.0.6)
+  - netfox (1.7.2)
+  - Nimble (3.1.0)
+  - ObjectMapper (1.1.1)
+  - OHHTTPStubs (4.7.0):
+    - OHHTTPStubs/Default (= 4.7.0)
+  - OHHTTPStubs/Core (4.7.0)
+  - OHHTTPStubs/Default (4.7.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.7.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.7.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.7.0)
+  - OHHTTPStubs/Swift (4.7.0):
+    - OHHTTPStubs/Core
+  - OMGHTTPURLRQ (3.1.1):
+    - OMGHTTPURLRQ/RQ (= 3.1.1)
+  - OMGHTTPURLRQ/FormURLEncode (3.1.1)
+  - OMGHTTPURLRQ/RQ (3.1.1):
+    - OMGHTTPURLRQ/FormURLEncode
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (3.1.1)
+  - PromiseKit (3.0.2):
+    - PromiseKit/Foundation (= 3.0.2)
+    - PromiseKit/QuartzCore (= 3.0.2)
+    - PromiseKit/UIKit (= 3.0.2)
+  - PromiseKit/CorePromise (3.0.2)
+  - PromiseKit/Foundation (3.0.2):
+    - OMGHTTPURLRQ (~> 3.1.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (3.0.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (3.0.2):
+    - PromiseKit/CorePromise
+  - Quick (0.9.0)
+  - Timberjack (0.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Locksmith
+  - netfox
+  - Nimble
+  - ObjectMapper
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
+  - PromiseKit
+  - Quick
+  - Timberjack
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Locksmith: 42ec3d535448e3c218f4342782b07a222b1acfd1
+  netfox: ab995a8327995b847a7b7c1d83c574e0d4aacb25
+  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+  ObjectMapper: 4143abed1dbd49b73d75092fe8fa1c88ed6434b7
+  OHHTTPStubs: d2bf6a0f407620d67e75a1d3f12d86a2b1dd15c0
+  OMGHTTPURLRQ: 633f98ee745aeda02345935a52eec1784cddb589
+  PromiseKit: ab1a380f7a30cf8cce663a2411e8b3580b10313d
+  Quick: 332eb1da73125a2106dd637424c803f2ae97e4a9
+  Timberjack: 4181fb4fa5c0c02a0855deb5aa1ade6043db7b42
+
+COCOAPODS: 0.39.0
